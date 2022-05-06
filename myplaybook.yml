@@ -4,15 +4,18 @@
   tasks:
   - name: i want to install git
     apt:
-      name: git
+      name: "{{mywebpackonubuntu}}"
       state: present
+    when: ansible_os_family =="Debian"  
 
   - name: i want to install tree
     apt:
-       name: tree
+       name: "{{mywebpackonubuntu}}"
        state: present
+    when: ansible_os_family =="Debian"    
 
   - name: i want to install webserver
     apt:
-        name: apache2
-        state: present     
+        name: "{{mywebpackonubuntu}}"
+        state: present   
+    when: ansible_os_family =="Debian"      
