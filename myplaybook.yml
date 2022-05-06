@@ -4,5 +4,5 @@
   tasks:
   - name: i want to install webserver
     apt:
-      name: "{{mywebpackonubuntu}}"
+      name: apache2
       state: present 
