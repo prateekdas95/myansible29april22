@@ -2,7 +2,7 @@
 - hosts: mywebservers
   become: yes
   tasks:
-  - name: i want to install apache2
+  - name: i want to install tree
     apt:
      name: "{{dddddd}}"
      state: present 
