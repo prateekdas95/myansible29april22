@@ -2,20 +2,9 @@
 - hosts: all
   become: yes
   tasks:
-  - name: i want to install git
-    apt:
-      name: "{{mywebpackonubuntu}}"
-      state: present
-    when: ansible_os_family =="Debian"  
-
-  - name: i want to install tree
-    apt:
-       name: "{{mywebpackonubuntu}}"
-       state: present
-    when: ansible_os_family =="Debian"    
-
-  - name: i want to install webserver
-    apt:
+  
+    - name: i want to install webserver
+      apt:
         name: "{{mywebpackonubuntu}}"
         state: present   
-    when: ansible_os_family =="Debian"      
+      when: ansible_os_family =="Debian"      
