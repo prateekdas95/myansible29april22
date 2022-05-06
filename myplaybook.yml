@@ -2,7 +2,6 @@
 - hosts: mywebservers
   become: yes
   tasks:
-  
   - name: i want to install webserver
     apt:
       name: "{{mywebpackonubuntu}}"
