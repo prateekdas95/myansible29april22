@@ -13,3 +13,9 @@
       name: tree
       state: present
     tags: mytree   
+
+  - name: wget
+    apt:
+      name: wget
+      state: present
+    tags: mywget
